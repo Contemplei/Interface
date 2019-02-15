@@ -1,0 +1,15 @@
+@font-face {
+   font-family: 'faktum';
+   src: url('font/Faktum-Regular.woff2') format('woff2'),
+        url('font/Faktum-Regular.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'faktum';
+   src: url('font/Faktum-Bold.woff2') format('woff2'),
+        url('font/Faktum-Bold.woff') format('woff');
+   font-weight: bold;
+   font-style: normal;
+}

@@ -1,0 +1,282 @@
+@import url("_principal.css");
+
+/* PRINCIPAL */
+.boxTiposConsorcio{      
+   position: relative;
+   background-color: #f4e7d7;
+   padding-bottom: 40px;
+}
+.btnSetaBaixo{
+   position: absolute;
+   bottom: -32px;
+   left:50%;
+   margin-left: -32px;
+   outline: none;
+   border: none;
+   background-color: transparent;
+   padding:0;   
+}
+.boxImagemTopo{
+   position: absolute;
+   width:100%;
+   top:0;
+   bottom: 0;
+   background:#f5e8d8 url(../_img/bg-home-topo.jpg) bottom center no-repeat;
+   background-size: cover;
+}
+.boxTiposConsorcio-conteudo{   
+   height:90vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   z-index: 2;
+}
+.boxTiposConsorcio-conteudo-item{
+   width:85%;
+}
+.blocoTextoPrincipal{
+   width:600px;
+   color:#40078e;
+}
+.tituloBanner{
+   font-size: 3.5rem;      
+   margin-bottom: .5em;
+   font-weight: bold;
+}
+.textoSegundario{
+   font-size: 2.5rem;
+}
+
+.boxListaTiposConsorcio{
+   display: flex;
+   justify-content: space-around;
+   width:100%;
+}
+.boxListaTiposConsorcio .btnTipoConsorcio{
+   width: 100%;
+   min-width: 150px;
+   background-color: #fff;
+   border-radius: 20px;
+   border:none;
+   cursor: pointer;
+   text-align: center;
+   padding:15px 30px;
+   text-decoration: none;
+   box-shadow: 0px 5px 20px rgba(0, 0, 0, .3);
+   transition: background-color .3s;   
+}
+.boxListaTiposConsorcio .btnTipoConsorcio:hover{
+   background-color: #ddd;
+}
+.boxListaTiposConsorcio .btnTipoConsorcio .boxIcone{
+   height:72px;
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+}
+.boxListaTiposConsorcio .btnTipoConsorcio .nomeTipoConsorcio{
+   display: block;
+   font-weight: bold;
+   color:#40078e;
+   font-size: 1.1rem;
+   margin-top: .8em;
+}
+.boxListaTiposConsorcio .btnTipoConsorcio:not(:last-child){
+   margin-right: 2%;
+}
+
+
+/* MODAL */
+.modalConfigTipoConsorcio{
+   display: none;
+   padding:0;
+   border-radius: 20px;
+   cursor: inherit !important;
+}
+.modalConfigTipoConsorcio .listaEtapasConfConsorcio{
+   display: flex;
+   border-bottom: 1px solid #ddd;
+}
+.modalConfigTipoConsorcio .listaEtapasConfConsorcio .item{
+   padding:1.5em;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   min-width: 200px;
+}
+.modalConfigTipoConsorcio .listaEtapasConfConsorcio .item:first-child,
+.modalConfigTipoConsorcio .listaEtapasConfConsorcio .item:last-child{
+   min-width: unset;
+}
+.modalConfigTipoConsorcio .listaEtapasConfConsorcio .item .divisoriaItem{
+   position: absolute;
+   width:1px;
+   background-color: #ddd;
+   top: 0;
+   right: 0;
+   bottom: 0;   
+}
+.modalConfigTipoConsorcio .listaEtapasConfConsorcio .item .divisoriaItem .iconeSetaRight{
+   position: absolute;
+   left:50%;
+   top:50%;
+   margin-top:-15px;
+   margin-left: -15px;
+   width:30px;
+   height:30px;
+   background-color: #fff;
+   padding:.5em;
+   border-radius: 100px;
+   border-right:2px solid #ddd;
+}
+.modalConfigTipoConsorcio .listaEtapasConfConsorcio .itemDiv{
+   display: block;
+   width:1px;
+   background-color: #ddd;
+}
+.modalConfigTipoConsorcio .listaEtapasConfConsorcio .item .txtNumeroEtapa{
+   font-size: 2em;
+   font-weight: 900;
+   color:#ddd;
+   text-align: center;
+}
+.modalConfigTipoConsorcio .listaEtapasConfConsorcio .itemDadosValorConsorcio{
+   color:#40078e;
+   font-size: 1rem;
+}
+.modalConfigTipoConsorcio .listaEtapasConfConsorcio .itemDadosValorConsorcio .titulo{
+   font-weight: bold;
+   margin-bottom: .3em;
+   font-size: 1.1rem;
+}
+
+.modalConfigTipoConsorcio .conteudoModal{
+   padding:2em 1em 1.5em;   
+}
+.modalConfigTipoConsorcio .conteudoModal .titulo{
+   color:#40078e;
+   font-weight: bold;
+   text-align: center;
+   font-size: 3rem;
+   margin-bottom: .4em;
+}
+.modalConfigTipoConsorcio .conteudoModal .textoDescricao{
+   color:#40078e;
+   font-size: 1.3rem;
+   line-height: 1.5em;
+   text-align: center;
+   margin-bottom: .5em;
+}
+.modalConfigTipoConsorcio .conteudoModal .valorCred{
+   color:#40078e;
+   font-weight: bold;
+   text-align: center;
+   font-size: 2rem;
+   margin-bottom: .5em;
+}
+.modalConfigTipoConsorcio .conteudoModal .boxFormSlide{
+   margin: 0 auto;
+   width:80%;
+   text-align: center;
+}
+
+.slider {
+   -webkit-appearance: none;  /* Override default CSS styles */
+   appearance: none;
+   width: 100%; /* Full-width */
+   height: 10px; /* Specified height */
+   background: #d3d3d3; /* Grey background */
+   outline: none; /* Remove outline */
+   opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+   -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+   transition: opacity .2s;
+ }
+ .slider:hover {
+   opacity: 1; /* Fully shown on mouse-over */
+ }
+ .slider::-webkit-slider-thumb {
+   -webkit-appearance: none; /* Override default look */
+   appearance: none;
+   width: 25px; /* Set a specific slider handle width */
+   height: 25px; /* Slider handle height */
+   background: #00ff79; /* Green background */
+   cursor: pointer; /* Cursor on hover */
+   border-radius: 100px;
+ }
+ 
+ .slider::-moz-range-thumb {
+   width: 25px; /* Set a specific slider handle width */
+   height: 25px; /* Slider handle height */
+   background: #00ff79; /* Green background */
+   cursor: pointer; /* Cursor on hover */
+   border-radius: 100px;
+ }
+
+
+
+ /* MOBILE */
+ @media (max-width:600px){
+   .boxImagemTopo{
+      top:20px;
+      background:#f5e8d8 url(../_img/bg-home-topo-mobile.jpg) bottom center no-repeat;
+      background-size: cover;
+   }
+
+    .boxTiposConsorcio{
+       padding-top: 100px;
+    }
+   
+   .blocoTextoPrincipal{
+      width:60%;
+   }
+   .boxTiposConsorcio-conteudo{
+      height:unset;
+      padding: 20px 0;
+   }
+
+   .tituloBanner{
+      font-size: 2rem;      
+   }
+   .textoSegundario {
+      font-size: 1.5rem;
+   }
+
+   .boxTiposConsorcio-conteudo-item{
+      width:100%;
+   }
+   .boxListaTiposConsorcio{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width:100%;
+   }
+
+   .boxListaTiposConsorcio .btnTipoConsorcio{
+      width: 30%;
+      margin-bottom: 10px;
+      min-width: unset;
+      background-color: #fff;
+      border-radius: 10px;
+      border:solid 1px #ddd;
+      cursor: pointer;
+      text-align: center;
+      padding:15px;
+      text-decoration: none;
+      box-shadow: 0px 5px 20px rgba(0, 0, 0, .3);
+      transition: background-color .3s;   
+   }
+   .boxListaTiposConsorcio .btnTipoConsorcio .boxIcone{
+      height: 40px;
+   }
+   .boxListaTiposConsorcio .btnTipoConsorcio .boxIcone img{
+      max-height: 100%;
+   }
+   .boxListaTiposConsorcio .btnTipoConsorcio:not(:last-child) {
+      margin-right: 0;
+   }
+   .boxListaTiposConsorcio .btnTipoConsorcio .nomeTipoConsorcio {
+      font-size:.8rem;
+  }
+}
